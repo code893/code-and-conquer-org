@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "BrassMono";
+  src: url(/assets/fonts/BrassMono-Regular.ttf) format("truetype");
+  font-weight: normal;  /* If it's a regular/400 weight */
+  font-style: normal;   /* If it's not italic */
+}
+@font-face {
+  font-family: "Baloo2";
+  src: url(/assets/fonts/Baloo2-VariableFont_wght.ttf) format("truetype");
+  font-weight: normal;  /* If it's a regular/400 weight */
+  font-style: normal;   /* If it's not italic */
+}
+body {
+    padding-top: 120px; /* Increased to match navbar height */
+    /* font-family: "BrassMono", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+}
+nav {
+    z-index: 1000; /* Adjust this value as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px; /* Increased from 50px to 120px for larger logo */
+}
+
+@media (max-width: 768px) {
+  .timeline-end {
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .timeline-start {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse; /* Ensure tasks are above answers */
+  }
+  .timeline-box {
+    margin-bottom: 1rem;
+  }
+  .grid {
+    width: 100%;  /* Make cards take up full width on mobile */
+    grid-auto-rows: minmax(auto, 1fr); /* Sets card height to at least 1fr */
+  }
+  .divider {
+    display: none;  /* Hide the divider on mobile */
+  }
+  .card {
+    flex-grow: 0; /* No horizontal growth on mobile */
+  }
+}
+
+/* Override inline code font */
+code {
+  font-family: "BrassMono", monospace !important;
+  /* Optional: Adjust size, color, etc. */
+  font-size: 0.9em; 
+  /* background-color: hsl(var(--n) / 0.2); /* DaisyUI neutral color 
+  padding: 0.2em 0.4em;
+  border-radius: var(--rounded-badge, 0.2em); */
+}
+
+.f-container{display:flex;}
+.column{flex:1;}
+
+.BrassMonoFont{
+  font-family: "BrassMono", monospace;
+}
+.Baloo2Font{
+  font-family: "Baloo2", sans-serif;
+}

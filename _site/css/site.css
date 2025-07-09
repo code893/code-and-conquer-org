@@ -7,7 +7,15 @@
 @font-face {
   font-family: "Baloo2";
   src: url(/assets/fonts/Baloo2-VariableFont_wght.ttf) format("truetype");
-  font-weight: normal;  /* If it's a regular/400 weight */
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;   /* If it's not italic */
+}
+@font-face {
+  font-family: "Baloo2Bold";
+  src: url(/assets/fonts/Baloo2-ExtraBold.ttf) format("truetype");
+  font-optical-sizing: auto;
+  font-weight: 800;
   font-style: normal;   /* If it's not italic */
 }
 body {
@@ -66,4 +74,7 @@ code {
 }
 .Baloo2Font{
   font-family: "Baloo2", sans-serif;
+}
+.Baloo2BoldFont{
+  font-family: "Baloo2Bold", sans-serif;
 }
